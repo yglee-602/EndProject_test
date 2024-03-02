@@ -26,13 +26,16 @@ buildscript {
 }
 apply plugin: "de.undercouch.download"
 //yg
-apply plugin: "org.sonarqube"
-sonarqube {
-    properties {
-        property "sonar.projectKey", "yglee-602_EndProject_test"
-        property "sonar.organization", "yglee-602"
-        property "sonar.host.url", "https://sonarcloud.io"
-    }
+plugins {
+  id "org.sonarqube" version "4.4.1.3373"
+}
+
+sonar {
+  properties {
+    property "sonar.projectKey", "yglee-602_EndProject_test"
+    property "sonar.organization", "yglee-602"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
 }
 //yg
 

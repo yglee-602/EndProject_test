@@ -9,6 +9,8 @@ jobs:
   build:
     name: Build and analyze
     runs-on: ubuntu-latest
+    env : 
+      working-directory: ./End-Project-master5
     steps:
       - uses: actions/checkout@v3
         with:
